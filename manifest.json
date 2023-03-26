@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Solutions Journalism",
+  "version": "1.0.0",
+  "description": "Solutions Journalism added to Google News",
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webNavigation",
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://news.google.com/*",
+    "https://newsapi.org/*",
+    "https://api.monkeylearn.com/",
+    "https://web.archive.org/*"
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "html/articleSmall.html",
+        "assets/articles.json"
+      ],
+      "matches": [
+        "https://news.google.com/*",
+        "https://web.archive.org/*"
+      ]
+    }
+  ]
+}
