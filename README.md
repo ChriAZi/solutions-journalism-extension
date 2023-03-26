@@ -1,6 +1,8 @@
 # Solutions Journalism - Semester Project
 A Chrome extension that augments the Google News Feed with relevant Solutions Journalism articles.
 
+The relevant research paper can be found in the assets folder.
+
 ![](assets/readmePic.png)
 
 ### Setup
